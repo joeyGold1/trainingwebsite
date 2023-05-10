@@ -1,14 +1,26 @@
+.ted {
+    font-family: fantasy;
+    color: #ffa200;
+    font-style: italic;
+    text-decoration: underline green 4px;
+}
+
 .bio {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
     border: 2px solid black;
-    padding: 0 10px;
     width: max-content;
+    font-family: "Comic Sans MS";
 }
 
 .bio .text {
-    width: 300px
+    width: 300px;
+    margin-left: 10px
+}
+.bio .image {
+    height: calc(100% - 20px);
+    padding: 10px;
 }
 
 form {
@@ -17,12 +29,12 @@ form {
 form ul {
     margin: 10px
 }
-form ul li{
+form li{
     display:grid;
     grid-template-columns: 1fr 4fr;
     list-style: none;
 }
-form li button {
+form button {
     margin: 10px;
     width:fit-content;
 }
