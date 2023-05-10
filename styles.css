@@ -1,0 +1,37 @@
+.bio {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    padding: 0 10px;
+    width: max-content;
+}
+
+.bio .text {
+    width: 300px
+}
+
+form {
+    width: 600px
+}
+form ul {
+    margin: 10px
+}
+form ul li{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    list-style: none;
+}
+form li button {
+    margin: 10px;
+    width:fit-content;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+    resize: vertical;
+}

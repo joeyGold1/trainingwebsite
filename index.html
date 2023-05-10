@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Tedsite</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>
+            The Tedsite
+        </h1>
+        <div class="bio">
+            <div class="text">
+                <h2>
+                    Welcome to the Tedsite.
+                </h2>
+                <p>
+                    Ted While is a software developer at Softwire based in North London. Ted While joined Softwire in 2022, quickly rising up the ranks to become the company alpha.
+                </p>
+                <p>
+                    Ted has been a valuable asset to any team he has joined with his work selflessly highlighting the inefficiencies of the team and paving the way for a swift downsizing.
+                </p>
+            </div>
+            <div class="image">
+                <img src="assets/ted.jpg" alt="ted the alpha"/>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Ted</h2>
+            <form action="php/contactTed.php" method="post">
+                <p>Use this handy form to contact Ted:</p>
+                <ul>
+                    <li>
+                        <label for="Name">Name:</label>
+                        <input id = "Name" name="user_name" type="text"/>
+                    </li>
+                    <li>
+                        <label for="Email">Email:</label>
+                        <input id = "Email" name="user_email" type="email"/>
+                    </li>
+                    <li>
+                        <label for="Message">Message:</label>
+                        <textarea id = "Message" name="user_message"></textarea>
+                    </li>
+                    <li>
+                        <span></span> <button type="submit">Submit</button>
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+    </body>
+</html>
