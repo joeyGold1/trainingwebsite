@@ -1,0 +1,61 @@
+@import 'navbar';
+@import 'colors';
+
+body {
+  margin: 10px 40px;
+  color: $text;
+  background-color: $primary-background;
+}
+
+.ted {
+  font-family: fantasy;
+  color: $accent1;
+  font-style: italic;
+  text-decoration: underline $accent2 4px;
+}
+
+#bio {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  width: max-content;
+  font-family: "Comic Sans MS";
+}
+
+#bio .text {
+  width: 300px;
+  margin-left: 10px
+}
+#bio .image {
+  height: calc(100% - 20px);
+  padding: 10px;
+}
+
+.contact-form {
+  width: 600px;
+
+  ul {
+    margin: 10px;
+  }
+
+  li {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    list-style: none;
+  }
+  button {
+    margin: 10px;
+    width:fit-content;
+  }
+
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+    resize: vertical;
+  }
+}
+

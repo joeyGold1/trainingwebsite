@@ -1,49 +1,74 @@
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 20px;
+  background-color: #DEF8EA;
+}
+#nav-bar .heading {
+  margin: 0;
+}
+#nav-bar .links {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  margin: 10px 40px;
+  color: #1C0F13;
+  background-color: #F6F7EB;
+}
+
 .ted {
-    font-family: fantasy;
-    color: #ffa200;
-    font-style: italic;
-    text-decoration: underline green 4px;
+  font-family: fantasy;
+  color: #FF8800;
+  font-style: italic;
+  text-decoration: underline #0D8000 4px;
 }
 
-.bio {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid black;
-    width: max-content;
-    font-family: "Comic Sans MS";
+#bio {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  width: max-content;
+  font-family: "Comic Sans MS";
 }
 
-.bio .text {
-    width: 300px;
-    margin-left: 10px
-}
-.bio .image {
-    height: calc(100% - 20px);
-    padding: 10px;
+#bio .text {
+  width: 300px;
+  margin-left: 10px;
 }
 
-form {
-    width: 600px
-}
-form ul {
-    margin: 10px
-}
-form li{
-    display:grid;
-    grid-template-columns: 1fr 4fr;
-    list-style: none;
-}
-form button {
-    margin: 10px;
-    width:fit-content;
+#bio .image {
+  height: calc(100% - 20px);
+  padding: 10px;
 }
 
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* Provide space to type some text */
-    height: 5em;
-    resize: vertical;
+.contact-form {
+  width: 600px;
 }
+.contact-form ul {
+  margin: 10px;
+}
+.contact-form li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  list-style: none;
+}
+.contact-form button {
+  margin: 10px;
+  width: fit-content;
+}
+.contact-form textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+  resize: vertical;
+}
+
+/*# sourceMappingURL=styles.css.map */
