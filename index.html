@@ -3,60 +3,89 @@
     <head>
         <title>The Tedsite</title>
         <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
-        <div id="nav-bar">
-            <h1 class="heading">
-                The <span class="ted">Ted</span>site
-            </h1>
-            <ul class="links">
-                <li>
-                    Not a link 1
-                </li>
-                <li>
-                    Not a link 2
-                </li>
-                <li>
-                    Not a link 3
-                </li>
-            </ul>
-        </div>
-        <div id="bio">
-            <div class="text">
-                <h2>
-                    Welcome to the <span class="ted">Ted</span>site.
-                </h2>
-                <p>
-                    <span class="ted">Ted</span> While is a software developer at Softwire based in North London. <span class="ted">Ted</span> While joined Softwire in 2022, quickly rising up the ranks to become the company alpha.
-                </p>
-                <p>
-                    <span class="ted">Ted</span> has been a valuable asset to any team he has joined, selflessly highlighting inefficiencies in the team, allowing for a swift downsizing, and for his skills to be put to use elsewhere.
-                </p>
+        <div id="page">
+            <header id="nav-bar">
+                <a class="heading" href="." tabindex="0">
+                    <h1>
+                        The <strong class="ted">Ted</strong>site
+                    </h1>
+                </a>
+                <div class="separator"></div>
+                <menu class="links">
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Alpha" target="_blank" rel="noopener noreferrer" tabindex="0">
+                            <h2> Woah an actual link <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg=="></h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./page2.html" tabindex="0">
+                            <h2> Another link (to somewhere on this site!) </h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tedGame.html" tabindex="0">
+                            <h2> The Ted Game </h2>
+                        </a>
+                    </li>
+                </menu>
+                <button class="burgermenuicon" onclick="toggleBurgerMenuOpen()"><img src="./assets/menu.png" alt="burger menu icon"></button>
+                <script>
+                    function toggleBurgerMenuOpen() {
+                        var x = document.getElementById("nav-bar");
+                        if (x.className === "") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "";
+                        }
+                    }
+                </script>
+            </header>
+
+            <div class="page-body">
+                <div class="widgets-area">
+                    <article id="bio">
+                        <div class="text">
+                            <h2 tabindex="0">
+                                Welcome to the <strong class="ted">Ted</strong>site.
+                            </h2>
+                            <p tabindex="0">
+                                <strong class="ted">Ted</strong> While is a software developer at Softwire based in North London. <strong class="ted">Ted</strong> While joined Softwire in 2022, quickly rising up the ranks to become the company alpha.
+                            </p>
+                            <p tabindex="0">
+                                <strong class="ted">Ted</strong> has been a valuable asset to any team he has joined, selflessly highlighting inefficiencies in the team, allowing for a swift downsizing, and for his skills to be put to use elsewhere.
+                            </p>
+                        </div>
+                        <img src="assets/ted.jpg" class="image" alt="ted the alpha" tabindex="0"/>
+                    </article>
+                    <div class="contact-form">
+                        <h2 tabindex="0">Contact <strong class="ted">Ted</strong></h2>
+                        <form action="php/contactTed.php" method="post">
+                            <p tabindex="0">Use this handy form to contact <strong class="ted">Ted</strong>:</p>
+                            <ul>
+                                <li>
+                                    <label for="Name">Name:</label>
+                                    <input id = "Name" name="user_name" type="text"/>
+                                </li>
+                                <li>
+                                    <label for="Email">Email:</label>
+                                    <input id = "Email" name="user_email" type="email"/>
+                                </li>
+                                <li>
+                                    <label for="Message">Message:</label>
+                                    <textarea id = "Message" name="user_message"></textarea>
+                                </li>
+                                <li>
+                                    <strong></strong> <button type="submit">Submit</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <img src="assets/ted.jpg" class="image" alt="ted the alpha"/>
-        </div>
-        <div class="contact-form">
-            <h2>Contact <span class="ted">Ted</span></h2>
-            <form action="php/contactTed.php" method="post">
-                <p>Use this handy form to contact <span class="ted">Ted</span>:</p>
-                <ul>
-                    <li>
-                        <label for="Name">Name:</label>
-                        <input id = "Name" name="user_name" type="text"/>
-                    </li>
-                    <li>
-                        <label for="Email">Email:</label>
-                        <input id = "Email" name="user_email" type="email"/>
-                    </li>
-                    <li>
-                        <label for="Message">Message:</label>
-                        <textarea id = "Message" name="user_message"></textarea>
-                    </li>
-                    <li>
-                        <span></span> <button type="submit">Submit</button>
-                    </li>
-                </ul>
-            </form>
+            <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by Andy Horvath - Flaticon</a>
         </div>
     </body>
 </html>

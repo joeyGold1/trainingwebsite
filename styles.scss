@@ -1,10 +1,16 @@
-@import 'navbar';
 @import 'colors';
+@import 'reset';
+@import 'navbar';
+@import 'overlay';
+
 
 body {
-  margin: 10px 40px;
   color: $text;
   background-color: $primary-background;
+}
+
+#page {
+  margin: 10px 40px;
 }
 
 .ted {
@@ -14,26 +20,43 @@ body {
   text-decoration: underline $accent2 4px;
 }
 
+.page-body {
+  margin: 10px auto auto;
+  max-width: 1008px;
+}
+
+.widgets-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width:100%
+}
+
 #bio {
+  //margin: auto;
+  padding: 10px;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  border: 2px solid black;
-  width: max-content;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  border: 2px solid $accent2;
   font-family: "Comic Sans MS";
+
+  .text {
+    width: 100%;
+    margin-left: 10px
+  }
+
+  .image {
+    //max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    padding: 10px;
+  }
 }
 
-#bio .text {
-  width: 300px;
-  margin-left: 10px
-}
-#bio .image {
-  height: calc(100% - 20px);
-  padding: 10px;
-}
+
+
 
 .contact-form {
-  width: 600px;
+  margin: auto;
 
   ul {
     margin: 10px;
@@ -50,12 +73,8 @@ body {
   }
 
   textarea {
-    /* Align multiline text fields with their labels */
     vertical-align: top;
-
-    /* Provide space to type some text */
     height: 5em;
     resize: vertical;
   }
 }
-

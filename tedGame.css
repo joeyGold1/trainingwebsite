@@ -1,0 +1,59 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+html :visited, body :visited, div :visited, span :visited, applet :visited, object :visited, iframe :visited,
+h1 :visited, h2 :visited, h3 :visited, h4 :visited, h5 :visited, h6 :visited, p :visited, blockquote :visited, pre :visited,
+a :visited, abbr :visited, acronym :visited, address :visited, big :visited, cite :visited, code :visited,
+del :visited, dfn :visited, em :visited, img :visited, ins :visited, kbd :visited, q :visited, s :visited, samp :visited,
+small :visited, strike :visited, strong :visited, sub :visited, sup :visited, tt :visited, var :visited,
+b :visited, u :visited, i :visited, center :visited,
+dl :visited, dt :visited, dd :visited, ol :visited, ul :visited, li :visited,
+fieldset :visited, form :visited, label :visited, legend :visited,
+table :visited, caption :visited, tbody :visited, tfoot :visited, thead :visited, tr :visited, th :visited, td :visited,
+article :visited, aside :visited, canvas :visited, details :visited, embed :visited,
+figure :visited, figcaption :visited, footer :visited, header :visited, hgroup :visited,
+menu :visited, nav :visited, output :visited, ruby :visited, section :visited, summary :visited,
+time :visited, mark :visited, audio :visited, video :visited {
+  color: #1C0F13;
+}
+
+#tedPong {
+  position: relative;
+  width: 720px;
+  height: 576px;
+  background-color: black;
+}
+#tedPong .paddle, #tedPong #rightpaddle, #tedPong #leftpaddle {
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  background-color: white;
+}
+#tedPong #leftpaddle {
+  left: 10px;
+}
+#tedPong #ball {
+  position: absolute;
+}
+#tedPong #rightpaddle {
+  right: 10px;
+}
+
+/*# sourceMappingURL=tedGame.css.map */

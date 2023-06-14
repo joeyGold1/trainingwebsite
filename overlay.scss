@@ -1,0 +1,17 @@
+.overlay {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  font-size: 60vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+.hide {
+  display: none;
+}

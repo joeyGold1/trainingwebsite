@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Tedsite</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="tedGame.css" rel="stylesheet">
+        <script src="tedGame.js" defer></script>
+    </head>
+    <body>
+        <div id="page">
+            <header id="nav-bar">
+                <a class="heading" href="." tabindex="0">
+                    <h1>
+                        The <strong class="ted">Ted</strong>site
+                    </h1>
+                </a>
+                <div class="separator"></div>
+                <menu class="links">
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Alpha" target="_blank" rel="noopener noreferrer" tabindex="0">
+                            <h2> Woah an actual link <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg=="></h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./page2.html" tabindex="0">
+                            <h2> Another link (to somewhere on this site!) </h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tedGame.html" tabindex="0">
+                            <h2> The Ted Game </h2>
+                        </a>
+                    </li>
+                </menu>
+                <button class="burgermenuicon" onclick="toggleBurgerMenuOpen()"><img src="./assets/menu.png" alt="burger menu icon"></button>
+                <script>
+                    function toggleBurgerMenuOpen() {
+                        var x = document.getElementById("nav-bar");
+                        if (x.className === "") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "";
+                        }
+                    }
+                </script>
+            </header>
+            <div class="page-body">
+                <h1>
+                    TED PONG
+                </h1>
+                <div id="tedPong">
+                    <div class="scoreboard">
+                        <div class="playerScore"><span class="ted player">Ted</span>: <span id="tedScore"> 0 </span></div>
+                        <div class="playerScore"><span id="yourScore"> 0 </span> :<span class="player">You</span></div>
+                    </div>
+                    <div id="leftpaddle"></div>
+                    <div id="ball"><span class="ted">Ted</span></div>
+                    <div id="rightpaddle"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

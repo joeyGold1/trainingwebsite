@@ -1,0 +1,29 @@
+@import "colors";
+@import "reset";
+
+#tedPong {
+  position: relative;
+  width: 720px;
+  height: 576px;
+  background-color: black;
+
+
+  .paddle {
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    background-color: white;
+  }
+
+  #leftpaddle {
+    @extend .paddle;
+    left: 10px;
+  }
+  #ball {
+    position: absolute;
+  }
+  #rightpaddle {
+    @extend .paddle;
+    right: 10px;
+  }
+}
